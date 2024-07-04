@@ -52,7 +52,7 @@ function fun5() {
     else ans = Math.max(ans, number);
   }
 //   alert("Max number is : " + ans);
-  addToHTML("answer", ans);
+  addToHTML("answer", ("Max number is : " + ans));
 }
 
 function fun6() {
@@ -61,7 +61,7 @@ function fun6() {
   if (number % 2 == 0) ans = "Even number";
   else ans = "Odd number";
   
-  addToHTML("answer", number);
+  addToHTML("answer", ans);
 }
 function fun7() {
   var char = prompt("Enter character");
@@ -99,7 +99,7 @@ function fun9() {
       console.log(`${i} * ${number} = ${i * number}`);
     }
   else {
-    for (var i = 1; i <= number; i++) {
+    for (var i = 1; i <= 12; i++) {
       var mult = `| ${i} * ${number} = ${i * number} |`;
       ans += mult;
     }
@@ -129,7 +129,7 @@ function fun10() {
 
 function fun11() {
   var base = prompt("Enter base");
-  var exponent = prompt("Enter exponent");
+  var exponent = prompt("Ent  er exponent");
   var ans = Math.pow(base, exponent);
   
   addToHTML("answer", ans);
@@ -153,7 +153,7 @@ function fun12() {
 function fun13() {
   var month = prompt("Enter Month");
   var numberOfDays = new Date(2024, month, 0).getDate();
-  addToHTML("answer", numberOfDays);
+  addToHTML("answer", `number of days in month ${month} is ${numberOfDays}`);
 }
 function fun14() {
   var physics = Number(prompt("Enter Physics mark"));
@@ -242,7 +242,7 @@ function fun17() {
   for (var i = 1; i <= 10; i++) {
     sum += i;
   }
-  addToHTML("answer", sum);
+  addToHTML("answer", `sum of numbers from 1 to 10 is ${sum}`);
 }
 
 function fun18() {
@@ -310,7 +310,7 @@ function fun21() {
   else {
     var ans = ""
     for (var i = 0; i < array.length; i++) {
-        ans+=i.toString() + " ";
+        ans+=array[i].toString() + " ";
       }
       addToHTML("answer", ans);
 
@@ -344,7 +344,7 @@ function fun23() {
   else {
     var ans = ""
     for (var i = 1; i <= 10; i++) {
-       ans += `${i} * ${number} = ${number * i}`;
+       ans += `| ${i} * ${number} = ${number * i} |`;
       }
       addToHTML("answer", ans);
 
