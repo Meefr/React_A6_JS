@@ -36,8 +36,8 @@ function fun4() {
   var number = prompt("Enter number");
   var ans;
   if (number > 0) {
-    // ans = "positive";
-    alert("positive");
+    ans = "positive";
+    // alert("positive");
   } else {
     // alert("negative");
     ans = "negative";
@@ -327,8 +327,7 @@ function fun22() {
   for (var i = 1; i < array.length; i++) {
     ans = Math.max(ans, array[i]);
   }
-  alert(`max number is ${ans}`);
-  addToHTML("answer", ans);
+  addToHTML("answer",`max number is ${ans}`);
 
 }
 function fun23() {
@@ -362,7 +361,7 @@ function fun24() {
     }
   }
   output =`number of vowels is ${ans}`; 
-  alert(output);
+  // alert(output);
   addToHTML("answer", output);
 }
 function isPrime(number) {
