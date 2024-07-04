@@ -212,7 +212,7 @@ function fun18(){
 
 function fun19(){
     var number = prompt("Enter number to calc factorial:");
-    var factorial = 0n;
+    var factorial = 1;
     for(var i = 2 ; i<= number ; i++)
         factorial*=i;
     alert(`factorial of ${number} is ${factorial}`);
