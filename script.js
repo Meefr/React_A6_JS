@@ -262,7 +262,7 @@ function fun22(){
         for(var i = 1 ; i< array.length; i++){
             ans =Math.max(ans,array[i])
         }
-        alert(ans);
+        alert(`max number is ${ans}`);
     
     
 }
