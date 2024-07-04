@@ -1,0 +1,37 @@
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+:root{
+    --primary-color:#007BFF;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.container h1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    width: 80%;
+    margin: 30px auto;
+    transition: all 0.5s ease;
+    cursor: default;
+}
+.container h1:hover{
+    width: 90%;
+}
+.btn-custom {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px !important;
+    font-weight: bold !important;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.btn-custom:hover{
+    scale: 1.1;
+    border-color: #007BFF;
+    color: transparent;
+}
